@@ -5,11 +5,12 @@ import Login from "./pages/Login";
 import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart"; // Asegúrate de importar Cart
 import { AuthProvider } from "./context/AuthContext";
-import { CartProvider } from "./context/CartContext";
+import { CartProvider } from "./context/CartContext"
+import "./styles/main.scss"
 
 function App() {
   return (
-    <AuthProvider>
+    <AuthProvider>  
       <CartProvider>
         <Router>
           <Routes>
